@@ -9,7 +9,7 @@ https://chromedriver.chromium.org/downloads). Be sure to match the version of ch
 
 The main function of selenium in this case is to search the html of the [NPR Morning Edition](https://www.npr.org/programs/morning-edition/) page to find the class of the object needed to play the live radio. See the main chunk below:
 
-```
+```python
 # set chrome driver to open without GUI
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
@@ -22,7 +22,7 @@ driver.get('https://www.npr.org/programs/morning-edition/')
 ```
 
 Make sure to include the WebDriverWait lines to prevent this error:
-```
+```python
 selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".btn-live-radio"}
 ```
 Without it your code barrels on to the next command without waiting for the webpage to update, so it thinks the element for the hidden button is missing.
