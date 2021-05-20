@@ -1,0 +1,9 @@
+SHELL=/bin/bash
+PATH=/usr/local/bin/:/usr/bin:/usr/sbin
+10 8 * * 1-5 export DISPLAY=:0 && cd /Users/BrendanInglis/PycharmProjects/NPR Automation && /usr/bin/python NPR_Alarm_Clock.py
+
+# Test at 4:50
+SHELL=/bin/bash
+PATH=/usr/local/bin/:/usr/bin:/usr/sbin
+10 8 * * 1-5 export DISPLAY=:0 && cd /Users/BrendanInglis/PycharmProjects/NPR_AlarmClock && python3 NPR_Alarm_Clock.py
+
