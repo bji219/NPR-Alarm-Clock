@@ -36,6 +36,9 @@ PATH=/usr/local/bin/:/usr/bin:/usr/sbin
 10 8 * * 1-5 export DISPLAY=:0 && cd /path/to/python/file && python3 NPR_Alarm_Clock.py
 ```
 
+- **NOTE: cron job will not execute when your computer is asleep.** I am looking into a way around this, but the simplest work around for now is to schedule your computer to wake up a minute before the cron job is set to execute-
+- On a mac: System Preferences > Energy Saver > Schedule
+
 ## Features to Implement
 - Ability to pause and unpause cron job (need to look into command line more)
 - Include case for closing the browser window early without erroring out
